@@ -1,0 +1,74 @@
+<!--Demonstrate following events using JavaScript.  
+a. onclick 
+b. ondblclick 
+c. onsubmit 
+d. onreset 
+e. onload 
+f. onselect 
+g. onchange-->
+<!--Sohan Raut-->
+<!doctype html>
+<html>
+<head>
+    <title> Program 4 </title>
+    <script>
+
+   	 function f1()
+   	 {
+   		 alert("On click even triggered..... executing");
+   	 }
+   	 
+   	 function f2()
+   	 {
+   		 alert("On double click even triggered..... executing");
+   	 }
+
+   	 function f3()
+   	 {
+   		 alert("On load even triggered..... executing");
+   	 }
+
+   	 function f4()
+   	 {
+   		 alert("On sumbit even triggered..... executing");
+   	 }
+
+   	 function f5()
+   	 {
+   		 alert("On reset even triggered..... executing");
+   	 }
+
+   	 function f6()
+   	 {
+   		 alert("On change even triggered..... executing");
+   	 }
+
+   	 function f7()
+   	 {
+   		 alert("On select even triggered..... executing");
+   	 }
+
+    </script>
+
+</head>
+
+<body = "f3()">
+	<form onsubmit = "f4()" onreset = "f5()">
+		<button type = "button" onclick = "f1()"> Click Me! </button> <br><br>
+		<button type = "button" ondblclick = "f2()"> Double Click Me! </button> <br><br>
+    
+		<label for="textInput">Text Input:</label>
+		<input type="text" id="textInput" onchange="f6()" value="Initial Text"><br><br>
+		
+		<label for="selectInput">Select Input:</label>
+		<select id="selectInput" onchange="f7()">
+			<option value="option1">Option 1</option>
+			<option value="option2">Option 2</option>
+			<option value="option3">Option 3</option>
+		</select>
+
+	 
+		<br><br><input type = "submit">
+		<input type = "reset" value = "Reset">
+		
+	</form>

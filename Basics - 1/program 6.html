@@ -1,0 +1,46 @@
+<!--Demonstrate following events with JS code. 
+a. onmousedown 
+b. onmouseup 
+c. onmouseover 
+d. onmouseout 
+e. onmousemove-->
+<!--Sohan Raut-->
+<!doctype html>
+<html>
+<head>
+	<script>
+		function f1() 
+		{
+			alert("Mouse down event triggered");
+		}
+		
+		function f2() 
+		{
+			alert("Mouse up event triggered");
+		}
+		
+		function f3() 
+		{
+			alert("Mouse over event triggered");
+		}
+		
+		function f4() 
+		{
+			alert("Mouse out event triggered");
+		}
+		
+		function f5() {
+			alert("Mouse move event triggered");
+		}
+
+	</script>
+</head>
+<body>
+	<button onmousedown="f1()">Click Me for onmousedown</button>
+	<button onmouseup="f2()">Click Me for onmouseup</button>
+	<button onmouseover="f3()">Click Me for onmouseover</button>
+	<button onmouseout="f4()">Click Me for onmouseout</button>
+	<button onmousemove="f5()">Click Me for onmousemove</button>
+</body>
+
+</html>

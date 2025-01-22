@@ -1,0 +1,58 @@
+<!--Write the JavaScript code to accept name and salary from five employees and display the name of the employee with highest salary and lowest salary-->
+<!...Sohan Raut>
+<!doctype html>
+<html>
+<head>
+    <title> Program 8 </title>
+    <script>
+        var i, name;
+        var emp_names = [];
+        var emp_sal = [];
+        
+        
+        for(i=0; i<5; i++) {
+            name = prompt("Enter the Name of Employee " + (i + 1) + ": ");
+            emp_names.push(name);
+            emp_sal[i] = parseInt(prompt("Enter the Salary of Employee " + (i + 1) + ": "), 10);
+        }
+        
+        
+        var high_sal = emp_sal[0];
+        var low_sal = emp_sal[0];
+        var high = 0;
+        var low = 0;
+        
+        
+        for(i=1; i<5; i++) {
+            if (high_sal < emp_sal[i]) {
+                high_sal = emp_sal[i];
+                high = i;
+            }
+            if (low_sal > emp_sal[i]) {
+                low_sal = emp_sal[i];
+                low = i;
+            }
+        }
+        
+		for(i=0; i<5; i++) {
+		document.write("Employee Name: " + emp_names[i] + " and Employee Salary: " + emp_sal[i] + "<br>");
+		}
+		
+		
+        document.write("<br>Details of Employee having highest and lowest salary are: <br><br>");
+        
+        document.write("Employee with highest salary:<br>");
+        document.write("Employee Name: " + emp_names[high] + "<br>");
+        document.write("Employee Salary: " + emp_sal[high] + "<br><br>");
+        
+        document.write("Employee with lowest salary:<br>");
+        document.write("Employee Name: " + emp_names[low] + "<br>");
+        document.write("Employee Salary: " + emp_sal[low] + "<br>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!--Write a JS to implement simple calculator using Switch case-->
+<!--Sohan Raut-->
+<!doctype html>
+<html>
+<head>
+	<title> Program 9 (Calculator) </title>
+	
+	<script>
+			var choice;
+			var a, b;
+			
+			function add(a, b)
+			{
+				return a + b;
+			}
+			
+			function sub(a, b)
+			{
+				return a - b;
+			}
+			
+			function mul(a, b)
+			{
+				return a * b;
+			}
+			
+			function div(a, b)
+			{
+				if ( b == 0 )
+				{
+					return "Error: Division of 0, not possible";
+				}
+				
+				return a / b;
+			}
+			
+			function mod(a, b)
+			{
+				return a % b;
+			}
+			
+			a = parseInt(prompt("Enter first number: \n"));
+			b = parseInt(prompt("Enter second number: \n"));
+			
+			choice = parseInt(prompt("1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division \n 5. Modulus \n\n Enter your choice: "));
+			
+			switch(choice)
+			{
+				case 1: 
+						document.write("Addition of " + a + " and " + b + " = " + add(a, b));
+						break;
+						
+				case 2: 
+						document.write("Subtraction of " + a + " and " + b + " = " + sub(a, b));
+						break;
+						
+				case 3: 
+						document.write("Multiplication of " + a + " and " + b + " = " + mul(a, b));
+						break;
+				
+				case 4: 
+						document.write("Division of " + a + " and " + b + " = " + div(a, b));
+						break;
+						
+				case 5: 
+						document.write("Modulus of " + a + " and " + b + " = " + mod(a, b));
+						break;
+						
+				default: document.write("Invalid Choice <br>");
+							break;
+							
+			}
+	</script>
+</head>
+</html>

@@ -1,0 +1,42 @@
+<!--WAJS to display sum and average of n numbers. Accept user input-->
+<!--Sohan Raut-->
+<!doctype html>
+ <html>
+ <head>
+	<title> Program 3 </title>
+	<script>
+			var i;
+			var arr = [];
+			var avg = 0;
+			var sum = 0;
+			var n;
+			function f1(){
+			n = parseInt(prompt("Enter the size of array: "));
+			
+			for(i=0; i<n; i++)
+			{
+				arr[i] = parseInt(prompt("Enter a number: "));
+			}
+			
+			document.write("Entered elements are: ");
+			for(i=0; i<n; i++)
+			{
+				document.write(" " + arr[i]);
+			}
+			for(i=0; i<n; i++)
+			{
+				sum = sum + arr[i];
+			}
+			
+			avg = sum / n;
+			
+			document.write("<br><br>Sum = " + sum);
+			document.write("<br>Average = " + avg);
+			}
+			
+	</script>
+</head>
+<body>
+	<button type = "button" onclick = "f1()"> Click Me </button>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!--WAJS to compute percentage and grade of student. Student will enter marks obtained in 5 subjects. 
+Make use of onclick event and a user defined function-->
+<!--Sohan Raut-->
+<!doctype html>
+<html>
+<head>
+    <title> Program 4 </title>
+    <script>
+   	 var marks = [];
+   	 var i;
+   	 var sum = 0;   	 
+    
+   	 for(i=0; i<5; i++)
+   	 {
+   		 marks[i] = parseFloat(prompt("Enter marks (out of 100) of subject " + (i+1) +": "));
+		 sum = sum + marks[i];
+   	 }
+
+   	 
+   	 
+   	 per = (sum / 500) * 100;
+   	 per = per.toFixed(2);
+
+   	 for(i=0; i<5; i++)
+   	 {
+   		 document.write("Marks of Subject " + (i+1) + " = " + marks[i]);
+   		 document.write("<br>");
+   	 }
+
+	 document.write("Total Marks = " + sum);
+   	 document.write("<br><br>Percentage: " + per);   	 
+   	 document.write("<br>Grade Obtained: \n")
+
+   	 if( per >= 90 && per < 100 )
+   	 {
+   		 document.write("Grade A");
+   	 }
+   	 else if( per >= 80 && per < 90 )
+   	 {
+   		 document.write("Grade B");
+   	 }
+   	 else if( per >= 60 && per < 80 )
+   	 {
+   		 document.write("Grade C");
+   	 }
+   	 else if ( per >= 40 && per < 60 )
+   	 {
+   		 document.write("Grade D");
+   	 }
+   	 else if ( per < 40 )
+   	 {
+   		 document.write("Grade F");
+   	 }
+    </script>
+</head>
+
+</html>

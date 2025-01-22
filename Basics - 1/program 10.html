@@ -1,0 +1,39 @@
+<!-- Write a JS demonstrate “for-in” and “for-of” loops-- >
+<!--Sohan Raut-->
+<!doctype html>
+<html>
+<head>
+	<title> Program 10 </title>
+	<script>
+		var x;
+		var car = 
+					{
+						name: "Name: Bentley Continental GT",
+						color: "Color: Green",
+						engine: "Engine: 6.0 Litre W12 Engine",
+						type: "Type: SUV"
+					}
+		
+		document.write("<b>Car</b><br><br>");	
+		for( x in car )
+		{
+			document.write(" " + car[x]);
+			document.write("<br>");
+		}
+		
+		var truck = ["Volvo", "MAN", "Scania"];
+		document.write("<br><br><b>Trucks</b><br><br>");
+		
+		for( x of truck )
+		{
+			document.write(" " + x);
+			document.write("<br>");
+		}
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

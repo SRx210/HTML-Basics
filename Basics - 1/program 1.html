@@ -1,0 +1,43 @@
+<!--WAJS to initialize variables of different data types. Display their values and data types-->
+<!--Sohan Raut-->
+<!doctype html>
+<html>
+<head>
+	<title> Program 1 </title>
+	<script>
+		var x;
+		var a = 7;
+		var b = 9.81;
+		var c = "Hello";
+		var d = true;
+		var arr = ["Bentley", "Mercedes", "Bugatti"];
+		var o1 = {
+					fname: "Pragya",
+					age: "20",
+					branch: "Comp"
+				};
+		
+		function f1() {
+		for( x in o1 ) {
+		document.write("<br>" + o1[x]);
+		}
+		}
+		
+		document.write("Value of A = " + a + " and the data type associated with it is " + typeof a);
+		document.write("<br><br>Value of B = " + b + " and the data type associated with it is " + typeof b);
+		document.write("<br><br>Value of C = " + c + " and the data type associated with it is " + typeof c);
+		document.write("<br><br>Value of D = " + d + " and the data type associated with it is " + typeof d);
+		document.write("<br><br>Value of E = " + arr + " and the data type associated with it is " + typeof arr);
+		document.write("<br><br>Value of F = ");
+		f1();
+		document.write("<br> and the data type associated with it is " + typeof o1);
+		
+		
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

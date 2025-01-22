@@ -1,0 +1,43 @@
+<!--Explain 3 different types of pop-up boxes in JavaScript with examples-->
+<!--Sohan Raut-->
+<!doctype html>
+<html>
+<head>
+	<title> Program 2 </title>
+	<script>
+		function pop_boxes()
+		{
+			alert("Thank you for using our site!"); // Alert Box
+			var feedback_req = confirm("Would you like to provide a feedback?"); // Confirm Box
+			
+			if(feedback_req)
+			{
+				var feedback_enter = prompt("Enter your feedback below"); // Prompt Box
+				
+				if( feedback_enter != null)
+				{
+					alert("Thank You for your feedback!");
+				}
+				else if( feedback_enter == null )
+				{
+					alert("Feedback Cancelled");
+				}
+				else
+				{
+					alert("No Feedback Provided");
+				}
+			}
+			else
+			{
+				alert("Thank you for visiting our site!, Please feel to provide feedback later");
+			}
+		}
+	</script>
+
+<body>
+	<button type = "button" onclick = "pop_boxes()"> Enter </button>	
+</body>
+
+</html>
+			
+			
