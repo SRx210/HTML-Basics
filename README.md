@@ -1,3 +1,9 @@
+<div align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png" alt="HTML Logo" width="150">
+</div>
+
+
+
 # Introduction to HTML
 
 Learn the basics of HyperText Markup Language (HTML).
